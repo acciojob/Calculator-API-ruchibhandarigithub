@@ -91,7 +91,7 @@ app.get('/subtract',(res,req)=>{
       message:'Cannot divide by zero'
     });
   }
-  const res = num1 / num2;
+  const result = num1 / num2;
   if(res < -100000){
   return res.send({
     status:'error',
@@ -100,7 +100,7 @@ app.get('/subtract',(res,req)=>{
   return res.send({
     status:'error',
     message: "The division of given numbers",  
-    difference: num1/num2  
+    difference: result 
   });
 
 });
